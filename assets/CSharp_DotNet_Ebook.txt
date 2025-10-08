@@ -1,0 +1,159 @@
+
+
+C Sharp & .NET: Código que Descomplica
+
+
+
+ 1. Variáveis e Tipos
+C Sharp é fortemente tipado, ou seja, você precisa declarar o tipo da variável.
+Exemplo prático:
+
+int idade = 25;
+string nome = "Ernesto";
+bool ativo = true;
+
+Console.WriteLine($"Nome: {nome}, Idade: {idade}, Ativo: {ativo}");
+
+Exemplo real: armazenar informações de um usuário no sistema.
+
+
+
+ 2. Estruturas de Controle
+C Sharp possui if, switch, for, while para controlar o fluxo do programa.
+
+int nota = 85;
+
+if (nota >= 70)
+    Console.WriteLine("Aprovado");
+else
+    Console.WriteLine("Reprovado");
+
+Exemplo real: decisão simples de aprovação de aluno.
+
+
+
+ 3. Arrays e Listas
+Armazene múltiplos valores de forma organizada.
+
+string[] frutas = { "Maçã", "Banana", "Laranja" };
+List<int> idades = new List<int> { 20, 25, 30 };
+
+Console.WriteLine(frutas[1]); // Banana
+
+Exemplo real: guardar nomes de produtos ou idades de clientes.
+
+
+
+ 4. Métodos
+Funções ajudam a organizar o código e reutilizar lógica.
+
+int Somar(int a, int b)
+{
+    return a + b;
+}
+
+Console.WriteLine(Somar(10, 15)); // 25
+
+Exemplo real: cálculo de total de vendas.
+
+
+
+ 5. Classes e Objetos
+C Sharp é orientado a objetos. Use classes para modelar entidades do mundo real.
+
+class Carro
+{
+    public string Modelo;
+    public int Ano;
+
+    public void ExibirInfo()
+    {
+        Console.WriteLine($"Modelo: {Modelo}, Ano: {Ano}");
+    }
+}
+
+Carro meuCarro = new Carro();
+meuCarro.Modelo = "Civic";
+meuCarro.Ano = 2020;
+meuCarro.ExibirInfo();
+
+Exemplo real: representar carros em um sistema de locadora.
+
+
+
+ 6. Propriedades e Encapsulamento
+Use propriedades para controlar acesso aos dados de uma classe.
+
+class Produto
+{
+    public string Nome { get; set; }
+    public decimal Preco { get; set; }
+}
+
+Produto p = new Produto { Nome = "Notebook", Preco = 3500m };
+Console.WriteLine($"{p.Nome} - R${p.Preco}");
+
+Exemplo real: cadastro de produtos com preço controlado.
+
+
+
+ 7. Trabalhando com Collections
+Coleções avançadas: List, Dictionary e HashSet.
+
+Dictionary<string, int> estoque = new Dictionary<string, int>();
+estoque["Camiseta"] = 10;
+estoque["Calça"] = 5;
+
+Console.WriteLine(estoque["Camiseta"]); // 10
+
+Exemplo real: controle de estoque de loja.
+
+
+
+ 8. LINQ
+LINQ simplifica consultas sobre arrays e listas.
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+var pares = numeros.Where(n => n % 2 == 0);
+
+foreach (var n in pares)
+    Console.WriteLine(n); // 2, 4
+
+Exemplo real: filtrar dados de clientes ou produtos rapidamente.
+
+
+
+ 9. Exceções e Tratamento de Erros
+Evite que o programa quebre com try/catch.
+
+try
+{
+    int divisao = 10 / 0;
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("Não é possível dividir por zero!");
+}
+
+Exemplo real: evitar falha ao dividir valores em calculadora financeira.
+
+
+
+ 10. Async e Await
+Permite programação assíncrona, ideal para operações demoradas.
+
+async Task<string> BaixarDadosAsync()
+{
+    await Task.Delay(2000); // simula download
+    return "Dados recebidos!";
+}
+
+string resultado = await BaixarDadosAsync();
+Console.WriteLine(resultado);
+
+Exemplo real: buscar informações de uma API sem travar a aplicação.
+
+
+
+Conclusão
+C Sharp e .NET combinam poder, organização e produtividade. Com esses conceitos, você já consegue criar programas reais, do console a aplicações web e APIs.
