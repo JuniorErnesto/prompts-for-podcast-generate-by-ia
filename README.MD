@@ -38,7 +38,7 @@ Utilizar uma esteira de prompts para gerar cada etapa do processo criativo.
 ## 💻 Tecnologias utilizadas no projeto
 
 - [ChatGPT](https://chat.openai.com/) 
-- [Manus.io](https://www.https://manus.im/app/)
+- [Manus.io](https://manus.im/app/)
 - [ElevenLabs](https://beta.elevenlabs.io/)
 
 ## ✨ Como foi feito ?
